@@ -7,10 +7,19 @@ const APIURL = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.d
 
 function App() {
   const [data, setData] = useState([])
+  const errRef = useRef();
   const getMovies = async (url) => {
-    const response = await fetch(url)
-    const data = await response.json()
-    setData(data.results);
+    try{
+      const response = await fetch(url)
+      if(!response.ok)
+        throw new Error('API request failed');
+        
+      const data = await response.json()
+      setData(data.results);
+    }
+    catch(err){
+      errRef.current.textContent = err.message;
+    }
   }
 
   const inputRef = useRef()
@@ -36,9 +45,9 @@ function App() {
         </div>
       </div>
       <div className="row">
-        {data.map((result) => {
+        {data ? data.map((result) => {
           return <Box key={result.id} result={result} />
-        })}
+        }) : <div ref={errRef} className="error"></div> }
       </div>
     </div>
   )
