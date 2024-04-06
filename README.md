@@ -1,1 +1,2 @@
-# react projects
+# React projects
+- Movies search app
