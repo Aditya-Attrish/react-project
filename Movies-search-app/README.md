@@ -1,5 +1,5 @@
 ## Getting Started with clone the above repository..
-This project was bootstrapped with [Create React-vite App](https://vitejs.dev/guide/).
+[Create React-vite App](https://vitejs.dev/guide/).
 
 ### In the project directory, you can run `npm install` to install node_modules.
 ### Then run `npm run dev` to run project on browser.
