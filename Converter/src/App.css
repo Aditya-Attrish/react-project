@@ -1,0 +1,36 @@
+.d-flex{
+  display: flex;
+}
+
+.cols{
+  flex-direction: column;
+}
+
+.between{
+  justify-content: space-between;
+}
+
+.my-1{
+  margin: 5px 0;
+}
+
+.box{
+  width: 70vw;
+  height: 25vh;
+  padding: 0 20px;
+  margin: 20px auto;
+  background-color: #e4e0e0cf;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+input{
+  font-size: 20px;
+  padding: 3px 5px;
+  margin-top: 3px;
+}
+
+.box select{
+  font-size: 18px;
+  border: none;
+}
