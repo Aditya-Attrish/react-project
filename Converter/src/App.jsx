@@ -17,6 +17,7 @@ function App() {
   }
 
   const Converter = (x) => {
+    //convert a number to other number.
     setInput(x)
     setOutput(parseInt(x,inpLabel.current.value).toString(outLabel.current.value));
   }
