@@ -35,7 +35,7 @@ function App() {
               <option value={8}>Octo</option>
             </select>
           </label>
-          <button onClick={Swaping}><PiArrowsDownUpBold /></button>
+          <button className="butt" onClick={Swaping}><PiArrowsDownUpBold /></button>
         </div>
         <input
           type="text"
