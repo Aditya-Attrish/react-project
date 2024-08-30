@@ -9,3 +9,24 @@ body{
   justify-items: center;
 }
 
+.d-flex{
+  display: flex;
+}
+
+.cols{
+  flex-direction: column;
+}
+
+.between{
+  justify-content: space-between;
+}
+
+.my-1{
+  margin: 5px 0;
+}
+
+.butt{
+  font-size: 13px;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
